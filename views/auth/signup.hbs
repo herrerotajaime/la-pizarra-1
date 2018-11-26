@@ -1,0 +1,56 @@
+<h2>Signup</h2>
+
+<p class="account-message">
+  Do you already have an account?
+  <a href="/login">Login</a>
+</p>
+<br>
+{{#if message }}
+<div class="error-message">{{ message }}</div>
+{{/if}}
+<br>
+<hr><br>
+
+
+
+
+<form action="/signup" method="POST" id="form-container">
+  <label for="username">Nombre de usuario</label>
+  <input id="username" type="text" name="username" placeholder="Nombre de usuario">
+
+  <br><br>
+
+  <label for="password">Contraseña</label>
+  <input id="password" type="password" name="password" placeholder="Tu contraseña">
+  <br>
+
+
+  <br>
+  <hr><br>
+
+  <label for="name">Nombre</label>
+  <input id="name" type="name" name="name" placeholder="Nombre">
+
+  <br><br>
+
+  <label for="surname">Apellidos</label>
+  <input id="surname" type="surname" name="surname" placeholder="Apellidos">
+
+  <br><br>
+
+  <label for="zip">Código postal</label>
+  <input id="zip" type="zip" name="zip" placeholder="Tu código postal">
+
+  <br><br>
+
+  <select name="genre">
+    <option value="1">Chica</option>
+    <option value="2">Chico</option>
+    <option value="3">Chique</option>
+  </select>
+
+  <br><br>
+  <input type="submit" name="role" value="SOY ALUMNO">
+  <input type="submit" name="role" value="SOY PROFE">
+
+</form>
